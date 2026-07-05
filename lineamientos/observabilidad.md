@@ -1,14 +1,15 @@
-## Lineamientos de Observabilidad
+## Lineamientos de Integración
 
 Objetivos:
-- Busca que la aplicación pueda monitorearse, diagnosticarse y operarse bien.
-- Responde a: ¿Cómo sabremos qué pasó, dónde falló y cómo corregirlo?
+- Busca que la aplicación se conecte correctamente con otros sistemas.
+- Responde a: ¿Cómo se comunica la aplicación con otros sistemas de forma confiable?
 
 Lineamientos:
-- OBS-01: Todo componente debe emitir logs estructurados.
-- OBS-02: Toda transacción crítica debe poder rastrearse mediante un correlation ID o trace ID.
-- OBS-03: Deben capturarse métricas técnicas y de negocio.
-- OBS-04: Deben definirse alertas para disponibilidad, errores, latencia y saturación.
-- OBS-05: Los logs no deben exponer datos sensibles.
-- OBS-06: Las trazas distribuidas deben cubrir el flujo end-to-end entre canales, APIs y servicios internos.
-- OBS-07: Deben existir dashboards operativos para soporte y operación.
+- INT-01: Las integraciones síncronas deben exponerse mediante APIs versionadas y documentadas.
+- INT-02: Las integraciones asíncronas deben desacoplarse mediante colas, eventos o mensajería.
+- INT-03: Deben manejarse timeouts, reintentos y circuit breaker en llamadas remotas.
+- INT-04: Toda API debe tener contratos claros de entrada, salida y errores.
+- INT-05: Los cambios incompatibles deben publicarse como nuevas versiones.
+- INT-06: Las integraciones críticas deben ser idempotentes cuando aplique.
+- INT-07: Debe minimizarse el acoplamiento directo entre sistemas.
+- INT-08: Deben registrarse evidencias de intercambio para trazabilidad y soporte.
