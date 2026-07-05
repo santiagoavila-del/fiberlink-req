@@ -12,29 +12,23 @@ Servicios:
   - Repositorio de imágenes docker: Elastic Container Registry (ECR)
   - Orquestador de contenedores: Preferencia de Elastic Container Service (ECS) sobre Elastic Kubernetes Service (EKS)
 
-- Almacenamiento:
-  - Archivos: Simple Storage Service (S3)
-
 - Bases de datos:
-  - SQL: Aurora PostgreSQL (Si tienes más escrituras que lecturas) o Aurora MySQL (Si tienes más lecturas que escrituras)
+  - SQL: Oracle (para aplicaciones on-premise), PostgresSQL para soluciones sobre AWS y AzureSQL para soluciones sobre Azure. 
   - NoSQL: DynamoDB
-  - Caché: ElastiCache (Redis)
 
 - Redes y Entrega de Contenidos:
-  - CDN (Content Delivery Network): CloudFront
-  - Api Gateway: Api Gateway
-  - DNS (Domain Name System): Route 53
+  - Api Gateway: Api Gateway, Azure API Management
 
 - Administración y gobierno:
   - Systems Manager (Parameter Store)
   - CloudTrail (Auditoría)
-  - CloudFormation (IaC)
 
 - Integración de Aplicaciones:
   - Step Functions
   - Simple Notification Service (SNS)
   - Simple Queue Service (SQS)
   - EventBridge
+  - GCP Pub/Sub
 
 - Observabilidad:
   - Métricas y Logs: CloudWatch
@@ -42,18 +36,10 @@ Servicios:
   - Grafana
 
 - Machine Learning:
-  - Modelos Machine Learning: SageMaker AI
-  - Imágenes y Videos: Rekognition
-  - : Textract
-  - Agentes IA: Bedrock, Bedrock AgentCore
+  - Modelos Machine Learning: GCP BigQuery
 
 - Análisis:
-  - Athena
-  - Redshift
-  - OpenSearch
-  - Kinesis
-  - Lake Formation
-  - Glue
+  - PowerBI Azure
 
 - Seguridad, identidad y conformidad
   - Cognito
@@ -61,7 +47,3 @@ Servicios:
   - IAM
   - Key Management Service
   - WAF
-
-- FrontEnd:
-  - Amplify
-  - Location Service
