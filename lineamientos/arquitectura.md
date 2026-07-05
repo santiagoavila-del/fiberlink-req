@@ -12,4 +12,4 @@ Lineamientos:
 - ARQ-05: Deben preferirse contratos explícitos entre componentes sobre dependencias implícitas.
 - ARQ-06: Las reglas de negocio no deben quedar embebidas en canales o interfaces.
 - ARQ-07: Los componentes deben poder evolucionar con mínimo impacto lateral.
-- ARQ-08: Deben definirse criterios claros para decidir entre monolito, microservicios o serverless.
+- ARQ-08: Deben definirse criterios claros para decidir entre monolito, microservicios o serverless
